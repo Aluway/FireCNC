@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
+import NavBar from "./utility/NavBar/NavBar";
+import Home from "./pages/Home/Home.jsx";
+import SingleFullVenue from "./pages/SingleFullVenue/SingleFullVenue";
+import Modal from "./utility/Modal/Modal";
+import CityVenues from "./pages/CityVenues/CityVenues";
+// import "./App.css";
+
+class App extends React.Component {
+  render() {
+    return (
+      <Router>
+        <Route path="/" component={NavBar} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/venue/:vid" component={SingleFullVenue} />
+        <Route path="/" component={Modal} />
+        <Route exact path="/city/:cityName" component={CityVenues} />
+      </Router>
+    );
+  }
 }
 
 export default App;
