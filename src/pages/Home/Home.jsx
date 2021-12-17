@@ -66,7 +66,10 @@ class Home extends React.Component {
 
     const superhostVenuesUrl = `${window.apiHost}/venues/superHost`;
     const superhostVenues = await axios.get(superhostVenuesUrl);
+<<<<<<< HEAD
     console.log(superhostVenues.data);
+=======
+>>>>>>> master
 
     this.setState({
       superhostVenues: superhostVenues.data,
@@ -74,7 +77,10 @@ class Home extends React.Component {
   }
 
   render() {
+<<<<<<< HEAD
     console.log(this.state.superhostVenues);
+=======
+>>>>>>> master
     if (this.state.cities.length === 0) {
       return <Spinner />;
     }
@@ -85,7 +91,11 @@ class Home extends React.Component {
           <div className="row">
             <div className="home col s12">
               <div className="upper-fold">
+<<<<<<< HEAD
                 <SearchBox />
+=======
+                <SearchBox history={this.props.history} />
+>>>>>>> master
               </div>
             </div>
           </div>
@@ -111,7 +121,14 @@ class Home extends React.Component {
             </div>
 
             <div className="col s12 section-wrapper">
+<<<<<<< HEAD
               <Venues recommendedVenues={this.state.recommendedVenues} />
+=======
+              <Venues
+                venues={this.state.recommendedVenues.venues}
+                header="Venues for you"
+              />
+>>>>>>> master
             </div>
 
             <div className="col s12">
