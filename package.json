@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "name": "firecnc",
-=======
   "name": "firecnc-clone-hooks",
->>>>>>> master
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -25,10 +21,7 @@
     "redux": "^4.1.1",
     "redux-persist": "^6.0.0",
     "redux-promise": "^0.6.0",
-<<<<<<< HEAD
-=======
     "serve": "^12.0.1",
->>>>>>> master
     "slick-carousel": "^1.8.1",
     "sweetalert": "^2.1.2",
     "web-vitals": "^1.0.1"
