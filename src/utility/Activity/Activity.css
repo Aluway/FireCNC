@@ -1,0 +1,29 @@
+.activities {
+  margin-bottom: 40px;
+}
+
+.activities .activity img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.activities .activity a {
+  color: #000;
+}
+
+.activities .activity i {
+  font-size: 13px;
+}
+
+.activities-header {
+  font-size: 25px !important;
+  line-height: 36px !important;
+  letter-spacing: normal !important;
+  color: #484848 !important;
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+  margin: 0px !important;
+  margin-bottom: 20px !important;
+  padding: 0px !important;
+  font-weight: bold;
+}

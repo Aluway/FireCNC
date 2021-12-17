@@ -1,0 +1,29 @@
+.venue {
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+a {
+  color: #000;
+}
+
+.rating-location-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating {
+  font-size: 14px;
+}
+
+.rating-icon {
+  font-size: 15px;
+}
+
+.location {
+  font-size: 13px;
+}
